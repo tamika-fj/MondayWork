@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+<p>Welcome!!</p>
+<p>Please enter your postcode below to find your nearest doctor:</p>
+<form action="{{ url_for('Nearest_Doc') }}" method="post">
+  <p>Postcode:</p>
+  <p><input type="text" name="Postcode" /></p>
+  <p><input type="submit" value="Submit" /></p>
+</form>
+
+
+{% endblock %}
